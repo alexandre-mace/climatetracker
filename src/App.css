@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Supreme', sans-serif;
+}
+h1 {
+    font-size: calc(22px + 2vw);
+    margin-bottom: 0rem;
+    font-weight: 800;
+}
+.app-subtitle {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+    max-width: 700px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    font-weight: 700;
+    padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-img {
+    height: 27px;
+}
+.tool img {
+    height: 130px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tool {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 16px;
+    -webkit-transition: -webkit-box-shadow .2s,-webkit-transform .2s;
+    transition: -webkit-box-shadow .2s,-webkit-transform .2s;
+    transition: box-shadow .2s,transform .2s;
+    transition: box-shadow .2s,transform .2s,-webkit-box-shadow .2s,-webkit-transform .2s;
 }
 
-.App-link {
-  color: #61dafb;
+.tool:hover {
+    transform: translateY(-4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tool-title {
+    font-size: calc(18px + 1.2vw);
+}
+
+.tool-description {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header svg {
+    max-height: 8px;
+}
+.header-links-trigger {
+    padding: 15px;
+    z-index: 5;
+    border-radius: 16px;
+    position: relative;
+    -webkit-transition: -webkit-background .2s,-webkit-transform .2s;
+    transition: -webkit-background .2s,-webkit-transform .2s;
+    transition: background .2s,transform .2s;
+    transition: background .2s,transform .2s,-webkit-background .2s,-webkit-transform .2s;
+}
+.header-links-trigger:hover {
+    background: #f6f5f5;
+}
+.header-link {
+    color: black;
+    padding: 15px;
+    border-radius: 16px;
+}
+.header-links {
+    display: flex;
+    width: max-content;
+    min-width: 140px;
+    padding: 1rem;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 0 1px #eeeeee,0 6px 12px rgba(0,0,0,.04);
+    box-shadow: 0 0 0 1px #eeeeee,0 6px 12px rgba(0,0,0,.04);
+}
+.header-links-wrapper {
+    padding-top: 10px;
+    opacity: 0;
+    top: calc(100% - 15px);
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transition: opacity .2s,-webkit-transform .2s;
+    transition: opacity .2s,-webkit-transform .2s;
+    transition: opacity .2s,transform .2s;
+    transition: opacity .2s,transform .2s,-webkit-transform .2s;
+    will-change: transform;
+}
+.header-links-trigger:hover .header-links-wrapper {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transform: none;
+    -webkit-transform: initial;
+    transform: none;
+}
+.header-link:hover {
+    background: #f6f5f5;
+}
+.header-link img {
+    height: 25px;
 }
