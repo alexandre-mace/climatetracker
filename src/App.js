@@ -3,7 +3,7 @@ import { DarkModeToggle } from "react-dark-mode-toggle-2";
 import {useEffect, useState} from "react";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('climate-tracker-dark-mode') === 'true');
+  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('climate-lab-dark-mode') === 'true');
 
   useEffect(() => {
       if (isDarkMode) {
@@ -12,7 +12,7 @@ function App() {
           document.body.classList.remove('dark-mode')
       }
 
-      localStorage.setItem('climate-tracker-dark-mode', isDarkMode.toString())
+      localStorage.setItem('climate-lab-dark-mode', isDarkMode.toString())
   }, [isDarkMode]);
 
   const tools = [
@@ -32,7 +32,7 @@ function App() {
             <div className="row align-items-center">
                 <div className="col d-flex justify-content-between">
                     <a href={"/"} className={"d-flex align-items-center"}>
-                            <img height={27} width={27} className={"logo-img mr-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/thermometer_1f321-fe0f.png" alt="Thermomètre"/> ClimateTracker
+                            <img height={27} width={27} className={"logo-img mr-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/thermometer_1f321-fe0f.png" alt="Thermomètre"/> ClimateLab
                     </a>
                     <nav className={"d-none d-sm-flex align-items-center"}>
                             <DarkModeToggle
@@ -78,6 +78,13 @@ function App() {
                             <span></span>
 
                             <ul id="menu">
+                                <li style={{height: '50px'}} className={"text-right"}>
+                                    <DarkModeToggle
+                                        onChange={setIsDarkMode}
+                                        isDarkMode={isDarkMode}
+                                        size={55}
+                                    />
+                                </li>
                                 {tools.map((tool, index) => (
                                     <li key={index}>
                                         <a rel="noreferrer noopener" target={"blank"} href={tool.link} className={"header-link d-flex align-items-center"}>
@@ -95,7 +102,7 @@ function App() {
         <div className="container mt-3 mt-md-5">
             <div className="row">
                 <div className="col d-flex flex-column align-items-center text-center">
-                    <h1>ClimateTracker</h1>
+                    <h1>ClimateLab</h1>
                     <h2 className={"app-subtitle"}>Des outils numériques pour le climat qui permettent de s'approprier les ordres de grandeurs et se familiariser avec les objectifs de neutralité carbone.</h2>
                 </div>
             </div>

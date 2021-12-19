@@ -220,7 +220,12 @@ ul {
     transform: translate(150%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
+.dark-mode #menu {
+    background-color: #595959;
+}
+.dark-mode #menuToggle span {
+    background-color: white !important;
+}
 #menu li {
     padding: 10px 0;
     font-size: 22px;
@@ -229,6 +234,9 @@ ul {
 #menu li a {
     background-color: white;
     padding: 15px 25px;
+}
+.dark-mode #menu li a {
+    background-color: #242424;
 }
 
 #menuToggle input:checked ~ ul {
