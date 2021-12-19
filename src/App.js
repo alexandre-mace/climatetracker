@@ -32,7 +32,7 @@ function App() {
             <div className="row align-items-center">
                 <div className="col d-flex justify-content-between">
                     <a href={"/"} className={"d-flex align-items-center"}>
-                            <img height={27} width={27} className={"logo-img mr-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/thermometer_1f321-fe0f.png" alt="Thermomètre"/> ClimateLab
+                            <img height={27} width={27} className={"logo-img mr-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/alembic_2697-fe0f.png" alt="Thermomètre"/> ClimateLab
                     </a>
                     <nav className={"d-none d-sm-flex align-items-center"}>
                             <DarkModeToggle
