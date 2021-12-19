@@ -34,7 +34,7 @@ function App() {
                     <a href={"/"} className={"d-flex align-items-center"}>
                             <img height={27} width={27} className={"logo-img mr-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/thermometer_1f321-fe0f.png" alt="Thermomètre"/> ClimateTracker
                     </a>
-                    <nav className={"d-none d-md-flex align-items-center"}>
+                    <nav className={"d-none d-sm-flex align-items-center"}>
                             <DarkModeToggle
                                 onChange={setIsDarkMode}
                                 isDarkMode={isDarkMode}
@@ -63,9 +63,15 @@ function App() {
                             </div>
                         </div>
                     </nav>
-                    <nav className={"d-block d-md-none"} role="navigation">
+                    <nav className={"d-block d-sm-none"} role="navigation">
                         <div id="menuToggle">
-                            <input type="checkbox" />
+                            <input type="checkbox" onChange={e => {
+                                if (e.target.checked) {
+                                    document.body.classList.add('overflow-y-hidden')
+                                } else {
+                                    document.body.classList.remove('overflow-y-hidden')
+                                }
+                            }} />
 
                             <span></span>
                             <span></span>
@@ -99,7 +105,7 @@ function App() {
                 {tools.map((tool, index) => (
                     <div className="col-12 col-md-6" key={index}>
                         <a rel="noreferrer noopener" className="tool p-4 p-md-5" href={tool.link} target={"_blank"} style={{'backgroundColor': tool.backgroundColor, 'color': tool.color}}>
-                            <div className={"text-center mb-3 mt-4"}>
+                            <div className={"text-center mb-2 mt-2"}>
                                 <img height={130} width={130} src={tool.logo} alt="Logo du projet"/>
                             </div>
                             <div>

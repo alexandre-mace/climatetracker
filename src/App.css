@@ -33,6 +33,8 @@ h1 {
 }
 .tool img {
     height: 130px;
+    filter: drop-shadow(16px 32px 16px rgba(0,0,0,.16));
+    will-change: transform;
 }
 
 .tool {
@@ -62,6 +64,10 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
 }
 
 ul {
@@ -203,11 +209,10 @@ ul {
 
 #menu {
     position: absolute;
-    min-height: 100vh;
-    right: 0;
-    width: 300px;
+    min-height: 120vh;
+    left: -170px;
     margin: -100px 0 0 -50px;
-    padding: 125px 50px 50px;
+    padding: 125px 150px 50px 50px;
     background: #f6f5f5;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -219,6 +224,11 @@ ul {
 #menu li {
     padding: 10px 0;
     font-size: 22px;
+}
+
+#menu li a {
+    background-color: white;
+    padding: 15px 25px;
 }
 
 #menuToggle input:checked ~ ul {
