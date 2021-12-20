@@ -1,6 +1,7 @@
 body {
     font-family: 'Supreme', sans-serif;
     overflow-x: hidden;
+    margin: 0;
 }
 h1 {
     font-size: calc(22px + 2vw);
@@ -24,6 +25,9 @@ h1 {
     background: #242424;
 }
 
+.font-weight-700 {
+    font-weight: 700;
+}
 .dark-mode a {
     color: white;
 }
@@ -241,4 +245,11 @@ ul {
 
 #menuToggle input:checked ~ ul {
     transform: none;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+.dark-mode footer {
+    border-top-color: white;
 }

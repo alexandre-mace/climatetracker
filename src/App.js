@@ -2,9 +2,10 @@ import './App.css';
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 import {useEffect, useState} from "react";
 
+const projectDescription = "Des outils numériques pour le climat qui permettent de s'approprier les ordres de grandeurs et se familiariser avec les objectifs de neutralité carbone."
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('climate-lab-dark-mode') === 'true');
-
   useEffect(() => {
       if (isDarkMode) {
           document.body.classList.add('dark-mode')
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div className={"App"}>
-        <div className="container header">
+        <header className="container header">
             <div className="row align-items-center">
                 <div className="col d-flex justify-content-between">
                     <a href={"/"} className={"d-flex align-items-center"}>
@@ -98,16 +99,16 @@ function App() {
                     </nav>
                 </div>
             </div>
-        </div>
+        </header>
         <div className="container mt-3 mt-md-5">
             <div className="row">
                 <div className="col d-flex flex-column align-items-center text-center">
                     <h1>ClimateLab</h1>
-                    <h2 className={"app-subtitle"}>Des outils numériques pour le climat qui permettent de s'approprier les ordres de grandeurs et se familiariser avec les objectifs de neutralité carbone.</h2>
+                    <h2 className={"app-subtitle"}>{projectDescription}</h2>
                 </div>
             </div>
         </div>
-        <div className="container mt-3 mt-md-5 pt-4">
+        <div className="container mt-3 mt-md-5 pt-4 pb-5">
             <div className="row">
                 {tools.map((tool, index) => (
                     <div className="col-12 col-md-6" key={index}>
@@ -124,6 +125,35 @@ function App() {
                 ))}
             </div>
         </div>
+        <footer className="mt-5 pt-5 pb-5">
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-12 col-md-7">
+                        <a href={"/"} className={"d-flex align-items-center font-weight-700 mb-3"}>
+                            ClimateLab <img height={27} width={27} className={"logo-img ml-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/alembic_2697-fe0f.png" alt="Thermomètre"/>
+                        </a>
+                        <div>
+                            {projectDescription}
+                        </div>
+                    </div>
+                </div>
+                <div className="row mt-4">
+                    {tools.map((tool, index) => (
+                        <div key={index} className="col-auto font-weight-700">
+                            <a rel="noreferrer noopener" target={"blank"} href={tool.link} className={"header-link d-flex align-items-center"}>
+                                {tool.title}
+                                <img height={25} width={25} className={"ml-2"} src={tool.logo} alt="Logo du projet"/>
+                            </a>
+                        </div>
+                    ))}
+                </div>
+                <div className="row mt-4">
+                    <div className="col">
+                        ©2021 ClimateLab
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
   );
 }
