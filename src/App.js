@@ -19,7 +19,7 @@ function App() {
   const tools = [
       {
           title: 'Footprint',
-          description: 'Dynamic carbon footprint (CO2eq) of individual actions data visualization, using Ademe base carbone\'s data.',
+          description: 'Apprivoisez les ordres de grandeurs des émissions de gaz à effet de serre relatifs à nos activités quotidiennes.',
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/foot_1f9b6.png',
           backgroundColor: '#E7E1E1',
           color: '#ff4b31',
