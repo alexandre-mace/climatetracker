@@ -24,7 +24,15 @@ function App() {
           backgroundColor: '#E7E1E1',
           color: '#ff4b31',
           link: 'https://alexandre-mace.github.io/footprint/'
-      }
+      },
+      {
+          title: 'Explorateur',
+          description: 'Explore et visualise les données du climat.',
+          logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/globe-showing-europe-africa_1f30d.png',
+          backgroundColor: '#f3f3ff',
+          color: '#6478ff',
+          link: 'https://alexandre-mace.github.io/footprint/'
+      },
   ]
 
   return (
@@ -112,7 +120,7 @@ function App() {
             <div className="row">
                 {tools.map((tool, index) => (
                     <div className="col-12 col-md-6" key={index}>
-                        <a rel="noreferrer noopener" className="tool p-4 p-md-5" href={tool.link} target={"_blank"} style={{'backgroundColor': tool.backgroundColor, 'color': tool.color}}>
+                        <a rel="noreferrer noopener" className="tool h-100 p-4 p-md-5" href={tool.link} target={"_blank"} style={{'backgroundColor': tool.backgroundColor, 'color': tool.color}}>
                             <div className={"text-center mb-2 mt-2"}>
                                 <img height={130} width={130} src={tool.logo} alt="Logo du projet"/>
                             </div>
