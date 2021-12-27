@@ -31,7 +31,7 @@ function App() {
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/globe-showing-europe-africa_1f30d.png',
           backgroundColor: '#f3f3ff',
           color: '#6478ff',
-          link: 'https://alexandre-mace.github.io/footprint/'
+          link: 'https://alexandre-mace.github.io/explorateur/'
       },
   ]
 
