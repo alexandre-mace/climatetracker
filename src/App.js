@@ -119,7 +119,7 @@ function App() {
         <div className="container mt-3 mt-md-5 pt-4 pb-5">
             <div className="row">
                 {tools.map((tool, index) => (
-                    <div className="col-12 col-md-6" key={index}>
+                    <div className="col-12 col-md-6 mt-3" key={index}>
                         <a rel="noreferrer noopener" className="tool h-100 p-4 p-md-5" href={tool.link} target={"_blank"} style={{'backgroundColor': tool.backgroundColor, 'color': tool.color}}>
                             <div className={"text-center mb-2 mt-2"}>
                                 <img height={130} width={130} src={tool.logo} alt="Logo du projet"/>
