@@ -10,7 +10,7 @@ h1 {
 }
 .app-subtitle {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: calc(17px + 0.3vw);
     margin-top: 0.2rem;
     max-width: 700px;
 }
@@ -62,7 +62,7 @@ h1 {
 
 .tool-description {
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: calc(16px + 0.3vw);
 }
 
 a {
