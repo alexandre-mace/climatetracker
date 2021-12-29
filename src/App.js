@@ -25,8 +25,8 @@ function App() {
           backgroundColor: '#E7E1E1',
           color: '#ff4b31',
           link: 'https://alexandre-mace.github.io/footprint/',
-          extraCss: {filter: 'drop-shadow(0 0 0.4rem rgba(255, 75, 48, .7))'},
-          extraCssHover: {filter: 'drop-shadow(0 0 0.6rem rgba(255, 75, 48, .9))'}
+          extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(255, 75, 48, .6))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(255, 75, 48, .8))'}
       },
       {
           title: 'Explorateur',
@@ -35,8 +35,8 @@ function App() {
           backgroundColor: '#f3f3ff',
           color: '#6478ff',
           link: 'https://alexandre-mace.github.io/explorateur/',
-          extraCss: {filter: 'drop-shadow(0 0 0.4rem rgba(100, 120, 255, .7))'},
-          extraCssHover: {filter: 'drop-shadow(0 0 0.6rem rgba(100, 120, 255, .9))'},
+          extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(100, 120, 255, .6))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(100, 120, 255, .8))'},
       },
   ]
 
