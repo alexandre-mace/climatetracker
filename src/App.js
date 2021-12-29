@@ -1,6 +1,7 @@
 import './App.css';
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 import {useEffect, useState} from "react";
+import Tool from "./Tool";
 
 const projectDescription = "Des outils numériques pour le climat qui permettent de s'approprier les ordres de grandeurs et se familiariser avec les objectifs de neutralité carbone."
 
@@ -23,15 +24,19 @@ function App() {
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/foot_1f9b6.png',
           backgroundColor: '#E7E1E1',
           color: '#ff4b31',
-          link: 'https://alexandre-mace.github.io/footprint/'
+          link: 'https://alexandre-mace.github.io/footprint/',
+          extraCss: {filter: 'drop-shadow(0 0 0.4rem rgba(255, 75, 48, .7))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.6rem rgba(255, 75, 48, .9))'}
       },
       {
           title: 'Explorateur',
-          description: 'Explore et visualise les données du climat.',
+          description: 'Explorez, filtrez et visualisez les données de l\'énergie et du climat à travers des graphiques dynamiques.',
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/globe-showing-europe-africa_1f30d.png',
           backgroundColor: '#f3f3ff',
           color: '#6478ff',
-          link: 'https://alexandre-mace.github.io/explorateur/'
+          link: 'https://alexandre-mace.github.io/explorateur/',
+          extraCss: {filter: 'drop-shadow(0 0 0.4rem rgba(100, 120, 255, .7))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.6rem rgba(100, 120, 255, .9))'},
       },
   ]
 
@@ -108,7 +113,7 @@ function App() {
                 </div>
             </div>
         </header>
-        <div className="container mt-3 mt-md-5">
+        <div className="container mt-3">
             <div className="row">
                 <div className="col d-flex flex-column align-items-center text-center">
                     <h1>ClimateLab</h1>
@@ -116,19 +121,11 @@ function App() {
                 </div>
             </div>
         </div>
-        <div className="container mt-3 mt-md-5 pt-4 pb-5">
+        <div className="container mt-3 pb-5">
             <div className="row">
                 {tools.map((tool, index) => (
                     <div className="col-12 col-md-6 mt-3" key={index}>
-                        <a rel="noreferrer noopener" className="tool h-100 p-4 p-md-5" href={tool.link} target={"_blank"} style={{'backgroundColor': tool.backgroundColor, 'color': tool.color}}>
-                            <div className={"text-center mb-2 mt-2"}>
-                                <img height={130} width={130} src={tool.logo} alt="Logo du projet"/>
-                            </div>
-                            <div>
-                                <h3 className={"tool-title mb-1"}>{tool.title}</h3>
-                                <p className={"tool-description mt-2"}>{tool.description}</p>
-                            </div>
-                        </a>
+                        <Tool tool={tool}/>
                     </div>
                 ))}
             </div>
