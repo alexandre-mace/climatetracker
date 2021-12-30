@@ -22,7 +22,7 @@ function App() {
           title: 'Footprint',
           description: 'Apprivoisez les ordres de grandeurs des émissions de gaz à effet de serre relatifs à nos activités quotidiennes.',
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/foot_1f9b6.png',
-          backgroundColor: '#E7E1E1',
+          backgroundColor: '#f1efed',
           color: '#ff4b31',
           link: 'https://alexandre-mace.github.io/footprint/',
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(255, 75, 48, .6))'},
