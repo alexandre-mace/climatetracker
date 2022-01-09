@@ -134,7 +134,7 @@ function App() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-md-7">
-                        <a href={"/"} className={"d-flex align-items-center font-weight-700 mb-3"}>
+                        <a href={"/"} className={"footer-title d-flex align-items-center font-weight-700 mb-3"}>
                             ClimateLab <img height={27} width={27} className={"logo-img ml-3"} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/alembic_2697-fe0f.png" alt="Thermomètre"/>
                         </a>
                         <div>
