@@ -3,6 +3,9 @@ body {
     overflow-x: hidden;
     margin: 0;
 }
+html {
+    overflow-x: hidden;
+}
 h1 {
     font-size: calc(36px + 1.4vw);
     margin-bottom: 0rem;
