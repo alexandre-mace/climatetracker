@@ -44,7 +44,7 @@ function App() {
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/compass_1f9ed.png',
           backgroundColor: '#ffffff',
           color: '#040D21',
-          link: 'https://alexandre-mace.github.io/explorateur/',
+          link: 'https://alexandre-mace.github.io/neutral/',
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(4, 13, 33, .6))'},
           extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(4, 13, 33, .8))'},
       },
