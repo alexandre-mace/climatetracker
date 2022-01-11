@@ -38,6 +38,16 @@ function App() {
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(100, 120, 255, .6))'},
           extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(100, 120, 255, .8))'},
       },
+      {
+          title: 'Neutral',
+          description: 'Se repérer à travers la transition énergétique.',
+          logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/compass_1f9ed.png',
+          backgroundColor: '#ffffff',
+          color: '#040D21',
+          link: 'https://alexandre-mace.github.io/explorateur/',
+          extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(100, 120, 255, .6))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(100, 120, 255, .8))'},
+      },
   ]
 
   return (
@@ -122,9 +132,9 @@ function App() {
             </div>
         </div>
         <div className="container mt-3 pb-5">
-            <div className="row">
+            <div className="row justify-content-center">
                 {tools.map((tool, index) => (
-                    <div className="col-12 col-md-6 mt-3" key={index}>
+                    <div className="col-12 col-md-6 mt-3" style={{marginBottom: 14}} key={index}>
                         <Tool tool={tool}/>
                     </div>
                 ))}
