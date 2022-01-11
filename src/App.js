@@ -45,8 +45,8 @@ function App() {
           backgroundColor: '#ffffff',
           color: '#040D21',
           link: 'https://alexandre-mace.github.io/explorateur/',
-          extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(100, 120, 255, .6))'},
-          extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(100, 120, 255, .8))'},
+          extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(4, 13, 33, .6))'},
+          extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(4, 13, 33, .8))'},
       },
   ]
 
