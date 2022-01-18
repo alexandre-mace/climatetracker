@@ -123,7 +123,7 @@ function App() {
                 </div>
             </div>
         </header>
-        <div className="container mt-3">
+        <div className="container mt-4 mt-md-5">
             <div className="row">
                 <div className="col d-flex flex-column align-items-center text-center">
                     <h1>ClimateLab</h1>
