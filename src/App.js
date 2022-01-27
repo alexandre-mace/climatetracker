@@ -40,7 +40,7 @@ function App() {
       },
       {
           title: 'Neutral',
-          description: 'Se repérer à travers la transition énergétique.',
+          description: 'Se repérer au travers de la transition énergétique.',
           logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/compass_1f9ed.png',
           backgroundColor: '#ffffff',
           color: '#040D21',
