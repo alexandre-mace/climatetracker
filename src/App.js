@@ -2,6 +2,9 @@ import './App.css';
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 import {useEffect, useState} from "react";
 import Tool from "./Tool";
+import compass from './images/compass_1f9ed.webp';
+import foot from './images/foot_1f9b6.webp';
+import globe from './images/globe-showing-europe-africa_1f30d.webp';
 
 const projectDescription = "Des outils numériques pour le climat qui permettent de s'approprier les ordres de grandeurs et se familiariser avec les objectifs de neutralité carbone."
 
@@ -21,7 +24,7 @@ function App() {
       {
           title: 'Footprint',
           description: 'Apprivoisez les ordres de grandeurs des émissions de gaz à effet de serre relatifs à nos activités quotidiennes.',
-          logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/foot_1f9b6.png',
+          logo: foot,
           backgroundColor: '#f1efed',
           color: '#ff4b31',
           link: 'https://footprint.climatelab.fr',
@@ -31,7 +34,7 @@ function App() {
       {
           title: 'Explorateur',
           description: 'Explorez, filtrez et visualisez les données de l\'énergie et du climat à travers des graphiques dynamiques.',
-          logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/globe-showing-europe-africa_1f30d.png',
+          logo: globe,
           backgroundColor: '#f3f3ff',
           color: '#6478ff',
           link: 'https://explorateur.climatelab.fr',
@@ -41,7 +44,7 @@ function App() {
       {
           title: 'Neutral',
           description: 'Repérez-vous au travers de la transition énergétique.',
-          logo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/compass_1f9ed.png',
+          logo: compass,
           backgroundColor: '#ffffff',
           color: '#040D21',
           link: 'https://neutral.climatelab.fr',
