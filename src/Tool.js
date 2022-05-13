@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const Tool = ({tool}) => {
+const Tool = ({tool, darkMode}) => {
     const [hover, setHover] = useState(false);
 
     const toggleHover = () => {
@@ -9,7 +9,7 @@ const Tool = ({tool}) => {
 
     return (
         <a onMouseEnter={toggleHover} onMouseLeave={toggleHover} rel="noreferrer noopener" className="tool h-100 p-4 p-md-5" href={tool.link} target={"_blank"} style={
-            {...{'backgroundColor': tool.backgroundColor}, ...(hover ? tool.extraCssHover : tool.extraCss)}
+            {...{'backgroundColor': darkMode ? tool.darkModeBackgroundColor : tool.backgroundColor, 'color': darkMode ? tool.darkModeColor : '#000000'}, ...(hover ? tool.extraCssHover : tool.extraCss)}
         }>
             <div className={"text-center mb-2 mt-2"}>
                 <img height={130} width={130} src={tool.logo} alt="Logo du projet"/>

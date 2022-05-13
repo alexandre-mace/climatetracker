@@ -26,6 +26,8 @@ function App() {
           description: 'Apprivoisez les ordres de grandeurs des émissions de gaz à effet de serre relatifs à nos activités quotidiennes.',
           logo: foot,
           backgroundColor: '#f1efed',
+          darkModeBackgroundColor: '#000000',
+          darkModeColor: 'white',
           color: '#ff4b31',
           link: 'https://footprint.climatelab.fr',
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(255, 75, 48, .6))'},
@@ -36,6 +38,8 @@ function App() {
           description: 'Explorez, filtrez et visualisez les données de l\'énergie et du climat à travers des graphiques dynamiques.',
           logo: globe,
           backgroundColor: '#f3f3ff',
+          darkModeBackgroundColor: '#000000',
+          darkModeColor: 'white',
           color: '#6478ff',
           link: 'https://explorateur.climatelab.fr',
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(100, 120, 255, .6))'},
@@ -46,7 +50,9 @@ function App() {
           description: 'Repérez-vous au travers de la transition énergétique.',
           logo: compass,
           backgroundColor: '#ffffff',
+          darkModeBackgroundColor: '#000000',
           color: '#040D21',
+          darkModeColor: 'white',
           link: 'https://neutral.climatelab.fr',
           extraCss: {filter: 'drop-shadow(0 0 0.3rem rgba(4, 13, 33, .6))'},
           extraCssHover: {filter: 'drop-shadow(0 0 0.5rem rgba(4, 13, 33, .8))'},
@@ -138,7 +144,7 @@ function App() {
             <div className="row justify-content-center">
                 {tools.map((tool, index) => (
                     <div className="col-12 col-md-6 mt-3" style={{marginBottom: 14}} key={index}>
-                        <Tool tool={tool}/>
+                        <Tool tool={tool} darkMode={isDarkMode}/>
                     </div>
                 ))}
             </div>
